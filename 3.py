@@ -30,7 +30,6 @@ n = 600851475143
 answer = 0
 i=1
 while i<n:
-    print n-i
     i+=1
     if not isprime(i):
         continue
@@ -38,6 +37,7 @@ while i<n:
         if n%i != 0:
             continue
         else:
+            n=n/i
             answer=i
 
 
