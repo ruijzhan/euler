@@ -17,7 +17,7 @@ while True:
     tri = last_tri+i
     n_d = get_n_divisors(tri)
     print i,tri,n_d
-    if n_d == 500:
+    if n_d > 500:
         print "Answer:", tri
         break
     last_tri = tri
