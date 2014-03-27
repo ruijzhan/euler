@@ -37,3 +37,4 @@ while i<1000000:
 
 for key in len_dict.keys():
     print len_dict[key],key
+#then sort it
