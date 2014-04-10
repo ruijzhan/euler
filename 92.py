@@ -10,14 +10,15 @@ def get_end_number(n):
     n_current = n
     while True:
         n_next = get_next(n_current)
-        if n_next in lis:
-            for i in lis:
-                results[i]=n_next
-            return n_next
         if n_next in results.keys():
             for i in lis:
                 results[i]=n_next
             return results[n_next]
+
+        if n_next in lis:
+            for i in lis:
+                results[i]=n_next
+            return n_next
 
         n_current = n_next
         lis.append(n_next)
