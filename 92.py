@@ -26,6 +26,7 @@ n=0
 for i in xrange(1,10000000):
     if get_end_number(i) == 89:
         n+=1
+        print n,i
 
 print n
 
