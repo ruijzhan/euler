@@ -9,8 +9,9 @@ for n in s:
     if index == 0:
         res +=1
     else:
-        print [n,n-(math.sqrt(n)-1),n-(math.sqrt(n)-1)*2,n-(math.sqrt(n)-1)*3]
-        res += sum([n,n-(math.sqrt(n)-1),n-(math.sqrt(n)-1)*2,n-(math.sqrt(n)-1)*3])
+        lis = [n,n-(math.sqrt(n)-1),n-(math.sqrt(n)-1)*2,n-(math.sqrt(n)-1)*3]
+        print lis
+        res += sum(lis)
 
 print res
 
