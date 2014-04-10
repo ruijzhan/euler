@@ -20,7 +20,10 @@ def ispandigital(n):
             return False
     return True
 
+ans = 0
 for i in xrange(2,10000000000):
     if ispandigital(i):
         if isprime(i):
-            print i
+            ans = i
+
+print ans
